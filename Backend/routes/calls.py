@@ -23,10 +23,6 @@ def get_calls():
             model,
             company,
             Health_Call_Status,
-            Call_Back_Asked,
-            Quote_Sent,
-            Did_Not_Pick,
-            Health_Policy_Issued,
             `Last Updated by User`,
             Update_History
         FROM health_customers

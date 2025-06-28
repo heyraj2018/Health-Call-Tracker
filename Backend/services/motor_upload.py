@@ -47,11 +47,11 @@ def process_motor_excel(file_path):
             cursor.execute("""
                 INSERT INTO health_customers
                 (created_by, issued_date, customer_name, policy_number, regn_no, mobile_number, make, model, company,
-                 Health_Call_Status, Call_Back_Asked, Quote_Sent, Did_Not_Pick, Health_Policy_Issued)
-                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                 Health_Call_Status)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             """, (
                 created_by, issued_date_fmt, customer_name, policy_number, regn_no, str(mobile_number), make, model, company,
-                "New", False, False, False, False
+                "New"
             ))
             inserted += 1
 
