@@ -1,0 +1,6 @@
+flask
+flask-cors
+openpyxl
+mysql-connector-python
+python-dotenv
+sqlalchemy
